@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <!-- 顶部 -->
-    <mt-header fixed title="Jogo酒够"></mt-header>
+    <mt-header fixed title="JOGO"></mt-header>
     <!-- 底部 -->
     <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
@@ -33,6 +33,21 @@
 
 <style lang="less">
 .app-container {
+  //解决顶部浮动不占位
   padding-top: 40px;
+  //顶部固定导航高贵JOGO色
+  .mint-header {
+    background-color: #2b3e45;
+  }
+  .mui-bar.mui-bar-tab {
+    background-color: #2b3e45;
+
+    .mui-tab-item {
+      color: #fff;
+    }
+    .mui-active {
+      color: darkorange;
+    }
+  }
 }
 </style>
